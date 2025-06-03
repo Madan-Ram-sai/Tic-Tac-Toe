@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="TicTacToe.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <header>
+            <img src="ticTacToeimage.jpg">
+            <h1>Tic Tac Toe</h1>
+        </header>
+        <div class="game-container">
+            <div id="game-status"></div>
+            <div class="boxes-container">
+                <div box-index="0" class="box"></div>
+                <div box-index="1" class="box"></div>
+                <div box-index="2" class="box"></div>
+                <div box-index="3" class="box"></div>
+                <div box-index="4" class="box"></div>
+                <div box-index="5" class="box"></div>
+                <div box-index="6" class="box"></div>
+                <div box-index="7" class="box"></div>
+                <div box-index="8" class="box"></div>
+            </div>
+        </div>
+        <div class="reset-buttons" >
+            <button> reset game</button>
+            <button>reset scores</button>
+        </div>
+        
+        <div class="overlay">
+            <div class="resetBtn-container">
+                <p>Are you sure do you want to reset Game?</p>
+                <div class="confirmation-buttons">
+                    <button class="cancle">NO</button>
+                    <button class="confirmbtn">YES</button>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="resetBtn-container">
+                <p>Are you sure do you want to reset scores and Game?</p>
+                <div class="confirmation-buttons">
+                    <button class="cancle">NO</button>
+                    <button class="confirmbtn">YES</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="score-card">
+            <h4>Leader Board</h4>
+            <div class="scores">
+                <div id="1">
+                    <p>Matches won by  </p>
+                    <p>player X: <span id="x-wins"></span> </p>
+                </div>
+                <div id="2">
+                    <p>Matches won by </p>
+                    <p> player O: <span id="o-wins"></span> </p>
+                </div>
+            </div>
+        </section>
+
+        <script src="TicTacToe.js"></script>
+    </body>
+</html>
